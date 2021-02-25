@@ -5,6 +5,8 @@ const PORT = process.env.PORT || 5000;
 
 const routes = require('./routes');
 
+express.set('views', path.join(__dirname, 'client'))
+
 // require db connection
 require('./models');
 
